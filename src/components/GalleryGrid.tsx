@@ -14,7 +14,7 @@ interface GalleryGridProps {
 
 export default function GalleryGrid({ photos }: GalleryGridProps) {
     return (
-        <div className="p-4">
+        <div className="py-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {photos.map((photo) => (
                     <PhotoCard

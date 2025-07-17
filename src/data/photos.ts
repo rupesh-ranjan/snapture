@@ -3,7 +3,7 @@ export const photos = [
         id: "1",
         src: "/photos/Bird_Inside_Sun.jpg",
         title: "Bird Inside Sun",
-        category: "Bird",
+        category: "Nature",
     },
     {
         id: "2",
