@@ -9,15 +9,18 @@ export default function MenuSidebar() {
     return (
         <div
             className={`bg-gray-900 text-white min-h-screen p-4 transition-all duration-300 ${
-                collapsed ? "w-16" : "w-64"
+                collapsed ? "w-16" : "w-55"
             }`}
         >
-            <button
-                onClick={() => setCollapsed(!collapsed)}
-                className="text-white"
-            >
-                {collapsed ? "➡️" : "⬅️"}
-            </button>
+            <div className="flex justify-around">
+                {collapsed || <span className="text-3xl">Snapture</span>}
+                <button
+                    onClick={() => setCollapsed(!collapsed)}
+                    className="text-white"
+                >
+                    {collapsed ? "➡️" : "⬅️"}
+                </button>
+            </div>
 
             {collapsed ? <MenuIcons /> : <MenuItems />}
         </div>

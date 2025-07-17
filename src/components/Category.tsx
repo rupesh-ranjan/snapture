@@ -1,10 +1,5 @@
 "use client";
-import React from "react";
-
-interface ICategory {
-    type: string[];
-    onClick: (event: React.MouseEvent<HTMLUListElement>) => void;
-}
+import { ICategory } from "@/types/category";
 
 export default function Category({ type, onClick }: ICategory) {
     return (

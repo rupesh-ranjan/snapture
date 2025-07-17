@@ -1,16 +1,6 @@
 import PhotoCard from "./PhotoCard";
 import React from "react";
-
-interface Photo {
-    id: string;
-    src: string;
-    title?: string;
-    category?: string;
-}
-
-interface GalleryGridProps {
-    photos: Photo[];
-}
+import { GalleryGridProps } from "@/types/photo";
 
 export default function GalleryGrid({ photos }: GalleryGridProps) {
     return (
